@@ -151,11 +151,11 @@ class _MatrixGestureDetectorState extends State<MatrixGestureDetector> {
   }
     
   void onScaleEnd(ScaleEndDetails details) {
-    wedget.onScaleEnd();
+    widget.onScaleEnd();
   }  
 
   void onScaleUpdate(ScaleUpdateDetails details) {
-    wedget.onScaleEnd();
+    widget.onScaleEnd();
     translationDeltaMatrix = Matrix4.identity();
     scaleDeltaMatrix = Matrix4.identity();
     rotationDeltaMatrix = Matrix4.identity();
